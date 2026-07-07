@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptiCrop | Smart Agricultural Production Optimization Engine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="glass-card reveal">
+            <header class="topbar">
+                <a class="brand" href="#overview" aria-label="OptiCrop home">
+                    <span class="brand-mark">🌱</span>
+                    <span>
+                        <strong>OptiCrop</strong>
+                        <small>AI crop optimization</small>
+                    </span>
+                </a>
+
+                <nav class="nav-links" aria-label="Primary navigation">
+                    <a href="#overview">Overview</a>
+                    <a href="#predict-form">Predict</a>
+                </nav>
+            </header>
+
+            <section class="hero" id="overview">
+                <div class="hero-copy-wrap">
+                    <div class="hero-badge">Smart Agricultural Production Optimization Engine</div>
+                    <h1>AI Powered Crop Recommendation System</h1>
+                    <p class="hero-subhead">Smart Agricultural Production Optimization Engine</p>
+                    <p class="hero-copy">Predict the most suitable crop using soil nutrients and environmental conditions with Machine Learning.</p>
+
+                    <div class="hero-stats" aria-label="Product highlights">
+                        <div class="stat-item">
+                            <span class="stat-value">AI</span>
+                            <span class="stat-label">Prediction intelligence</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">RF</span>
+                            <span class="stat-label">Random Forest model</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">99.3%</span>
+                            <span class="stat-label">High accuracy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-art" aria-hidden="true">
+                    <svg viewBox="0 0 460 380" role="img" focusable="false">
+                        <defs>
+                            <linearGradient id="heroField" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95" />
+                                <stop offset="100%" stop-color="#d8f2dc" stop-opacity="0.55" />
+                            </linearGradient>
+                            <linearGradient id="heroLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#81C784" />
+                                <stop offset="100%" stop-color="#2E7D32" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="26" y="28" width="408" height="324" rx="38" fill="url(#heroField)" stroke="rgba(46,125,50,0.14)" />
+                        <circle cx="330" cy="100" r="52" fill="rgba(255,255,255,0.55)" />
+                        <path d="M84 260C142 228 176 184 232 176C294 167 338 194 374 224L374 308H84V260Z" fill="#d1ebd3" />
+                        <path d="M88 238C138 214 176 190 230 186C286 182 326 203 370 234" fill="none" stroke="#7fcf83" stroke-width="9" stroke-linecap="round" />
+                        <path d="M110 274C158 252 184 222 232 214C282 206 320 224 360 252" fill="none" stroke="#43A047" stroke-width="9" stroke-linecap="round" />
+                        <path d="M178 244C178 200 198 166 232 136C250 122 266 114 282 108" fill="none" stroke="url(#heroLeaf)" stroke-width="14" stroke-linecap="round" />
+                        <path d="M236 196C210 190 188 176 172 154C198 145 222 146 246 156C250 172 248 186 236 196Z" fill="url(#heroLeaf)" />
+                        <path d="M270 162C292 148 316 146 338 154C328 180 310 196 286 204C274 192 268 178 270 162Z" fill="url(#heroLeaf)" />
+                        <rect x="74" y="74" width="138" height="66" rx="20" fill="rgba(255,255,255,0.85)" stroke="rgba(46,125,50,0.12)" />
+                        <rect x="94" y="92" width="96" height="8" rx="4" fill="#43A047" />
+                        <rect x="94" y="110" width="68" height="8" rx="4" fill="#81C784" />
+                        <circle cx="350" cy="262" r="30" fill="rgba(67,160,71,0.18)" />
+                        <path d="M350 244V282" stroke="#2E7D32" stroke-width="8" stroke-linecap="round" />
+                        <path d="M350 256C338 248 332 240 328 230C340 230 348 234 356 244" fill="none" stroke="#2E7D32" stroke-width="7" stroke-linecap="round" />
+                        <path d="M350 260C362 252 368 244 372 234C360 234 352 238 344 248" fill="none" stroke="#2E7D32" stroke-width="7" stroke-linecap="round" />
+                    </svg>
+                </div>
+            </section>
+
+            <section class="works-section reveal" id="how-it-works" aria-label="How OptiCrop works">
+                <div class="section-heading section-heading--center">
+                    <h2>How OptiCrop Works</h2>
+                    <p>A simple, guided flow from field inputs to crop recommendation.</p>
+                </div>
+
+                <div class="works-flow">
+                    <article class="work-step">
+                        <div class="work-step-icon">1️⃣</div>
+                        <h3>Enter Soil & Climate Data</h3>
+                        <p>Provide nutrient values and environmental conditions from your field.</p>
+                    </article>
+                    <div class="work-connector" aria-hidden="true"></div>
+                    <article class="work-step">
+                        <div class="work-step-icon">2️⃣</div>
+                        <h3>AI Processes the Input</h3>
+                        <p>The interface checks values, prepares the data, and starts analysis.</p>
+                    </article>
+                    <div class="work-connector" aria-hidden="true"></div>
+                    <article class="work-step">
+                        <div class="work-step-icon">3️⃣</div>
+                        <h3>Random Forest Predicts</h3>
+                        <p>The trained model evaluates the field profile and selects the best crop.</p>
+                    </article>
+                    <div class="work-connector" aria-hidden="true"></div>
+                    <article class="work-step">
+                        <div class="work-step-icon">4️⃣</div>
+                        <h3>View Recommendation</h3>
+                        <p>See the recommended crop with confidence, insight, and crop details.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="feature-section reveal" aria-label="Feature cards">
+                <div class="feature-card">
+                    <span class="feature-icon">🤖</span>
+                    <h3>AI Powered Prediction</h3>
+                    <p>Fast, intelligent recommendations tuned for practical agricultural planning.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🌲</span>
+                    <h3>Random Forest Model</h3>
+                    <p>Reliable crop prediction powered by a trained Random Forest classifier.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🎯</span>
+                    <h3>High Accuracy (99.3%)</h3>
+                    <p>Precision-driven recommendations with a strong model performance baseline.</p>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">⚡</span>
+                    <h3>Instant Recommendation</h3>
+                    <p>Submit your crop profile and get an optimized result in seconds.</p>
+                </div>
+            </section>
+
+            <section class="form-panel reveal" id="predict-form">
+                <div class="section-heading">
+                    <h2>Enter Soil & Climate Metrics</h2>
+                    <p>Use the form below to predict the most suitable crop for your field conditions.</p>
+                </div>
+
+                <form class="prediction-form" action="/predict" method="POST" data-loading-form novalidate>
+                    <div class="input-grid">
+                        <div class="field-group floating-field">
+                            <span class="field-icon">🧪</span>
+                                <input type="number" id="N" name="N" placeholder=" " required min="0" inputmode="decimal" aria-describedby="N-help N-message" value="{{ values.get('N', '') }}" aria-invalid="{{ 'true' if errors.N else 'false' }}">
+                            <label for="N">Nitrogen</label>
+                            <small id="N-help" class="field-help">Use a non-negative value.</small>
+                                <small class="field-message" id="N-message" aria-live="polite">{{ errors.N }}</small>
+                        </div>
+
+                        <div class="field-group floating-field">
+                            <span class="field-icon">🌿</span>
+                                <input type="number" id="P" name="P" placeholder=" " required min="0" inputmode="decimal" aria-describedby="P-help P-message" value="{{ values.get('P', '') }}" aria-invalid="{{ 'true' if errors.P else 'false' }}">
+                            <label for="P">Phosphorus</label>
+                            <small id="P-help" class="field-help">Use a non-negative value.</small>
+                                <small class="field-message" id="P-message" aria-live="polite">{{ errors.P }}</small>
+                        </div>
+
+                        <div class="field-group floating-field">
+                            <span class="field-icon">🪴</span>
+                                <input type="number" id="K" name="K" placeholder=" " required min="0" inputmode="decimal" aria-describedby="K-help K-message" value="{{ values.get('K', '') }}" aria-invalid="{{ 'true' if errors.K else 'false' }}">
+                            <label for="K">Potassium</label>
+                            <small id="K-help" class="field-help">Use a non-negative value.</small>
+                                <small class="field-message" id="K-message" aria-live="polite">{{ errors.K }}</small>
+                        </div>
+
+                        <div class="field-group floating-field">
+                            <span class="field-icon">☀️</span>
+                                    <input type="number" step="0.01" id="temperature" name="temperature" placeholder=" " required min="-10" max="60" inputmode="decimal" aria-describedby="temperature-help temperature-message" value="{{ values.get('temperature', '') }}" aria-invalid="{{ 'true' if errors.temperature else 'false' }}">
+                            <label for="temperature">Temperature</label>
+                            <small id="temperature-help" class="field-help">Enter the average temperature in Celsius.</small>
+                                <small class="field-message" id="temperature-message" aria-live="polite">{{ errors.temperature }}</small>
+                        </div>
+
+                        <div class="field-group floating-field">
+                            <span class="field-icon">💧</span>
+                                <input type="number" step="0.01" id="humidity" name="humidity" placeholder=" " required min="0" max="100" inputmode="decimal" aria-describedby="humidity-help humidity-message" value="{{ values.get('humidity', '') }}" aria-invalid="{{ 'true' if errors.humidity else 'false' }}">
+                            <label for="humidity">Humidity</label>
+                            <small id="humidity-help" class="field-help">Humidity must be between 0 and 100.</small>
+                                <small class="field-message" id="humidity-message" aria-live="polite">{{ errors.humidity }}</small>
+                        </div>
+
+                        <div class="field-group floating-field">
+                            <span class="field-icon">⚖️</span>
+                                <input type="number" step="0.01" id="ph" name="ph" placeholder=" " required min="0" max="14" inputmode="decimal" aria-describedby="ph-help ph-message" value="{{ values.get('ph', '') }}" aria-invalid="{{ 'true' if errors.ph else 'false' }}">
+                            <label for="ph">Soil pH</label>
+                            <small id="ph-help" class="field-help">Enter pH in the 0 to 14 range.</small>
+                                <small class="field-message" id="ph-message" aria-live="polite">{{ errors.ph }}</small>
+                        </div>
+
+                        <div class="field-group floating-field field-span-2">
+                            <span class="field-icon">🌧️</span>
+                                <input type="number" step="0.01" id="rainfall" name="rainfall" placeholder=" " required min="0" inputmode="decimal" aria-describedby="rainfall-help rainfall-message" value="{{ values.get('rainfall', '') }}" aria-invalid="{{ 'true' if errors.rainfall else 'false' }}">
+                            <label for="rainfall">Rainfall</label>
+                            <small id="rainfall-help" class="field-help">Enter rainfall in millimeters.</small>
+                                <small class="field-message" id="rainfall-message" aria-live="polite">{{ errors.rainfall }}</small>
+                        </div>
+                    </div>
+
+                    <div class="button-row">
+                        <button type="submit" class="predict-button" data-predict-button>
+                            <span class="button-text">Predict Crop</span>
+                            <span class="button-loader" aria-hidden="true"></span>
+                        </button>
+                        <button type="reset" class="reset-button" data-reset-button>Reset</button>
+                    </div>
+                </form>
+            </section>
+
+            {% if prediction %}
+            <section class="prediction-wrapper reveal" id="result">
+                <article class="prediction-card" data-prediction="{{ prediction|e }}" data-confidence="{{ confidence if confidence is not none else '' }}" role="status" aria-live="polite">
+                    <div class="prediction-icon">🌾</div>
+                    <div class="prediction-copy">
+                        <p class="prediction-label">Recommended Crop</p>
+                        <h3 class="prediction-name">{{ prediction }}</h3>
+                        <div class="confidence-row">
+                            <div class="confidence-badge">
+                                <span>Confidence</span>
+                                <strong data-confidence-text>{{ confidence if confidence is not none else '—' }}{% if confidence is not none %}%{% endif %}</strong>
+                            </div>
+                            <div class="confidence-ring" data-confidence-ring aria-hidden="true">
+                                <div class="confidence-ring__inner">
+                                    <span data-confidence-ring-label>{{ confidence if confidence is not none else '0' }}%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="prediction-note">This crop is best suited for the provided soil nutrients and climate.</p>
+                        <div class="result-metrics" aria-label="Current field inputs">
+                            <span>🌡 Temperature</span>
+                            <span>💧 Humidity</span>
+                            <span>🌱 Soil</span>
+                            <span>🌧 Rainfall</span>
+                        </div>
+                    </div>
+                </article>
+
+                <section class="crop-info-card" data-crop-info aria-live="polite">
+                    <div class="crop-info-header">
+                        <span class="crop-info-icon">🌱</span>
+                        <h4>Crop Information</h4>
+                    </div>
+                    <div class="crop-info-grid">
+                        <div class="info-subcard">
+                            <span class="crop-info-label">📖 Description</span>
+                            <p data-crop-description></p>
+                        </div>
+                        <div class="info-subcard">
+                            <span class="crop-info-label">🌱 Ideal Soil</span>
+                            <p data-crop-soil></p>
+                        </div>
+                        <div class="info-subcard">
+                            <span class="crop-info-label">🌦 Climate</span>
+                            <p data-crop-climate></p>
+                        </div>
+                        <div class="info-subcard">
+                            <span class="crop-info-label">🗓 Growing Season</span>
+                            <p data-crop-season></p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            {% endif %}
+
+            <section class="history-section reveal" aria-label="Recent predictions">
+                <div class="history-card">
+                    <div class="history-header">
+                        <h2>Recent Predictions</h2>
+                        <span>Last 5 predictions from this session</span>
+                    </div>
+                    <div class="history-list" data-history-list>
+                        <p class="history-empty">No predictions yet.</p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="page-footer">
+                <div class="footer-line"></div>
+                <p>Developed by Team OptiCrop</p>
+                <p class="footer-tech">Machine Learning • Flask • Random Forest</p>
+                <div class="footer-socials" aria-label="Social links placeholders">
+                        <a href="#" aria-label="GitHub placeholder">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.59 2 12.24c0 4.52 2.87 8.35 6.84 9.7.5.1.68-.22.68-.48v-1.68c-2.78.62-3.37-1.22-3.37-1.22-.46-1.2-1.12-1.52-1.12-1.52-.91-.64.07-.63.07-.63 1 .08 1.52 1.06 1.52 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.04 1.03-2.76-.11-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.2 9.2 0 0 1 5 0c1.9-1.33 2.74-1.05 2.74-1.05.56 1.42.22 2.47.11 2.73.64.72 1.02 1.64 1.02 2.76 0 3.93-2.35 4.8-4.58 5.05.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10.07 10.07 0 0 0 22 12.24C22 6.59 17.52 2 12 2z"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn placeholder">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 6.5A1.94 1.94 0 1 1 3.06 6.5a1.94 1.94 0 0 1 3.88 0zM3.4 8.75h3.1V21H3.4V8.75zm5.47 0h2.98v1.68h.04c.42-.79 1.46-1.62 3.01-1.62 3.22 0 3.81 2.12 3.81 4.88V21h-3.1v-5.52c0-1.32-.03-3.02-1.84-3.02-1.84 0-2.12 1.43-2.12 2.92V21H8.87V8.75z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Email placeholder">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-7.53 4.72a.96.96 0 0 1-.94 0L4 8.2V6l8 5 8-5v2.2z"/></svg>
+                        </a>
+                </div>
+                <p>© 2026 OptiCrop</p>
+            </footer>
+
+            <div class="loading-overlay" aria-hidden="true" data-loading-overlay>
+                <div class="loading-card">
+                    <div class="loader-hero">
+                        <div class="loading-spinner" aria-hidden="true"></div>
+                        <div class="loader-orbit" aria-hidden="true">🌾</div>
+                    </div>
+                    <strong data-loading-message>Reading Soil Data...</strong>
+                    <span data-loading-submessage>Analyzing climate conditions...</span>
+                </div>
+            </div>
+
+            <div class="toast-stack" aria-live="polite" aria-atomic="true" data-toast-stack></div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</body>
+</html>
