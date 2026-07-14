@@ -1,5 +1,7 @@
 # 🌾 OptiCrop – AI Powered Crop Recommendation System
 
+---
+
 ## 📌 Project Overview
 
 OptiCrop is an AI-powered Crop Recommendation System designed to assist farmers in selecting the most suitable crop based on soil nutrients and environmental conditions. The application uses a Machine Learning model to analyze agricultural parameters and predict the optimal crop for cultivation.
@@ -132,13 +134,16 @@ http://127.0.0.1:5000
 
 ---
 
-## 📸 Screenshots
+## 📸 Application Screenshots
 
-Add screenshots of:
+### 🏠 Home Page
+![Home Page](screenshots/HomePage.png)
 
-- Home Page
-- Input Form
-- Crop Prediction Result
+### 🌱 Crop Prediction Form
+![Crop Prediction Form](screenshots/InputForm.png)
+
+### 🌾 Prediction Result
+![Prediction Result](screenshots/ResultForm.png)
 
 ---
 
@@ -176,7 +181,9 @@ The model is trained using the Crop Recommendation Dataset.
 
 ## 🤝 Contributors
 
-- **Pothula Mounika**
+- Mounika Pothula 📍 CSE Student @ Pragati Engineering College
+- 🎯 Aspiring Data Engineer & AI Enthusiast
+- 🔗 GitHub Profile[https://github.com/24A31A0597]
 
 ---
 
